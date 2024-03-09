@@ -2,7 +2,7 @@
 #include <cstdint>
 #include "alg.h"
 
-double pown(double value, uint16_t n)  {
+double pown(double value, uint16_t n) {
   double result=value;
   if (n == 0) {
     return 1;
@@ -25,7 +25,7 @@ double calcItem(double x, uint16_t n) {
 return pown(x, n)/fact(n);
 }
 
-double expn(double x, uint16_t count)  {
+double expn(double x, uint16_t count) {
   double result=1;
   for (int n = 1; n <= count; n++) {
     result += calcItem(x, n);
