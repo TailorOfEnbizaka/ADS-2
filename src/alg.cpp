@@ -3,9 +3,10 @@
 #include "alg.h"
 
 double pown(double value, uint16_t n) {
-  double result=value; 
-  if (n == 0) 
+  double result=value;
+  if (n == 0) {
     return 1;
+  } 
   else {
   for (int i = 1; i < n; i++) {
     result *= value;
@@ -15,9 +16,9 @@ double pown(double value, uint16_t n) {
 }
 
 uint64_t fact(uint16_t n) {
-  if (n <= 1) 
+  if (n <= 1)
     return 1;
-  else 
+  else
     return (n* fact(n - 1));
 }
 
